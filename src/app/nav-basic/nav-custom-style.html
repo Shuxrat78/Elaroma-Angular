@@ -1,0 +1,29 @@
+<ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs justify-content-center">
+  <li [ngbNavItem]="2">
+    <button ngbNavLink><b>Avon</b></button>
+    <ng-template ngbNavContent> </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <button ngbNavLink><b>Faberlic</b></button>
+    <ng-template ngbNavContent> </ng-template>
+  </li>
+  <li [ngbNavItem]="4">
+    <button ngbNavLink><b>Oriflame</b></button>
+    <ng-template ngbNavContent> </ng-template>
+  </li>
+  <!-- <li ngbDropdown class="nav-item" role="presentation"> -->
+  <li ngbDropdown class="ms-auto" role="presentation">
+    <button type="button" class="nav-link" ngbDropdownToggle>Kabinet</button>
+    <div ngbDropdownMenu>
+      <button ngbDropdownItem>Action</button>
+      <button ngbDropdownItem>Another action</button>
+      <button ngbDropdownItem>Something else here</button>
+      <div class="dropdown-divider"></div>
+      <button ngbDropdownItem>Separated link</button>
+    </div>
+  </li>
+  <!-- <li ngbNavItem [disabled]="true" class="ms-auto">
+    <button ngbNavLink>Disabled</button>
+    <ng-template ngbNavContent> </ng-template>
+  </li> -->
+</ul>
