@@ -5,12 +5,8 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": [
-<<<<<<< HEAD
       "node",
-      "@angular/localize"
-=======
-      "node"
->>>>>>> 2247716 (initial commit)
+      "@angular/localize",      
     ]
   },
   "files": [

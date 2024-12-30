@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-app": {
+    "elaroma-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,16 +23,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my-app",
+            "outputPath": "dist/elaroma-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-<<<<<<< HEAD
               "zone.js",
-              "@angular/localize/init"
-=======
+              "@angular/localize/init",
               "zone.js"
->>>>>>> 2247716 (initial commit)
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -42,10 +39,7 @@
               }
             ],
             "styles": [
-<<<<<<< HEAD
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-=======
->>>>>>> 2247716 (initial commit)
               "src/styles.css"
             ],
             "scripts": [],
@@ -83,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-app:build:production"
+              "buildTarget": "elaroma-angular:build:production"
             },
             "development": {
-              "buildTarget": "my-app:build:development"
+              "buildTarget": "elaroma-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,12 +93,9 @@
           "options": {
             "polyfills": [
               "zone.js",
-<<<<<<< HEAD
               "zone.js/testing",
-              "@angular/localize/init"
-=======
+              "@angular/localize/init",
               "zone.js/testing"
->>>>>>> 2247716 (initial commit)
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
